@@ -24,33 +24,35 @@ public class SecondActivity extends AppCompatActivity {
 
      intCounter = findViewById(R.id.intSecondCounter);
 
-     Button reset = findViewById(R.id.buttonReset);
-    reset.setOnClickListener(new View.OnClickListener() {
+     findViewById(R.id.buttonReset).setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            counter *= 0 ;
-        intCounter.setText(String.valueOf(counter));
+            counter = 0 ;
+            updateCounter();
         }
     });
-    Button minus = findViewById(R.id.buttonMinus);
-    minus.setOnClickListener(new View.OnClickListener() {
+    findViewById(R.id.buttonMinus).setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             if(counter > 0 ){
                 counter--;
-                intCounter.setText(String.valueOf(counter));
+                updateCounter();
             }
         }
     });
-    Button plus = findViewById(R.id.buttonPlus);
-    plus.setOnClickListener(new View.OnClickListener() {
+    findViewById(R.id.buttonPlus).setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             counter++;
-            intCounter.setText(String.valueOf(counter));
+            updateCounter();
+
         }
     });
 
     }
+private void updateCounter (){
+    intCounter.setText(String.valueOf(counter));
+
+}
 }
 
