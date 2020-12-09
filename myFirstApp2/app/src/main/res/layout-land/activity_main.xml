@@ -6,7 +6,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+        tools:context=".MainActivity"
+    android:orientation="horizontal">
 
 
     <Button
@@ -33,24 +34,36 @@
         android:layout_alignBottom="@+id/imageMisha"
                 android:layout_toEndOf="@+id/imageMisha"
         app:srcCompat="@mipmap/ic_masha_foreground" />
+
     <TextView
         android:id="@+id/title"
-        android:layout_width="wrap_content"
+        android:layout_width="316dp"
         android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/imageMasha"
+
         android:text="Маша и медведь"
-        android:layout_below="@+id/imageMisha"
-        android:layout_centerInParent="true"
+        android:textColor="@color/black"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"/>
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/testHistory"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="@string/textHistory"
-        android:textSize="20sp"
-        android:layout_margin="8dp"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/imageMasha"
         android:lineSpacingMultiplier="1.3"
-        android:layout_below="@+id/title"/>
+        android:text="@string/textHistory1"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/testHistory2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textHistory2"
+        android:lineSpacingMultiplier="1.3"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/imageMasha"/>
+
 
 </RelativeLayout>

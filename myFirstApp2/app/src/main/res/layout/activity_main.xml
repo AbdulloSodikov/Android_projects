@@ -47,10 +47,7 @@
         android:id="@+id/testHistory"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:text="«Маша и Медведь» — это российский мультипликационный сериал,созданный
-        анимационной студией «Анимаккорд», ориентированный на общую аудиторию.Показ начался
-        7 января 2009 года. Мультфильм создан при помощи трёхмерной графики. Транслируется на
-        телевизионных каналах «Карусель», «Мульт», «Супер» и других. В 2011 году вышел первый "
+        android:text="@string/textHistory1"
         android:textSize="20sp"
         android:layout_margin="8dp"
         android:lineSpacingMultiplier="1.3"
